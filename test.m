@@ -22,6 +22,8 @@ theta = logistic_regression(xt, yt, 1);
 % Make a prediction with the cv set
 p = predict(theta, xcv);
 
+f1score(p, ycv) * 100;
+
 % Check our predictions with the cv set
 result = check(p, ycv);
 
